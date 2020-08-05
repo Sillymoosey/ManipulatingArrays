@@ -94,15 +94,25 @@ namespace ManipulatingArrays
         static void Main(string[] args)
         {
             int[] ArrayA = { 0, 2, 4, 6, 8, 10 };
+
             int[] ArrayB = {1, 3, 5, 7, 9};
+
             int[] ArrayC = { 3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9 };
+
             Console.WriteLine("Averaging Arrays!");
+
             Console.WriteLine($"ArrayA's average:{Count(ArrayA)}\nArrayB's average:{Count(ArrayB)}\nArrayC's average:{Count(ArrayC)}");
+
             ArrayReverse(ArrayA);
+
             ArrayReverse(ArrayB);
+
             ArrayReverse(ArrayC);
+
             Rotating("left", 2, ArrayB);
+
             Rotating("right", 2, ArrayA);
+
             Sort(ArrayC);
         }
     }
